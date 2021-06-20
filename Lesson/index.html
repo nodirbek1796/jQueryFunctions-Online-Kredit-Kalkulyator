@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CREDIT CALCULATOR</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body class="bg-success">
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 offset-1">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-info">ONLINE KREDIT KALKULYATOR</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group py-2">
+                                <label for="credit_sum">Olinayotgan kiridet miqdori</label>
+                                <input type="text" id="credit_sum" class="form-control"
+                                       placeholder="Kredit miqdori ...">
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="annual_sum">Yillik foiz stavkasi (%)</label>
+                                <select name="" class="form-control" id="annual_sum">
+                                    <option value="10">10%</option>
+                                    <option value="15">15%</option>
+                                    <option value="18">18%</option>
+                                    <option value="20">20%</option>
+                                    <option value="25">25%</option>
+                                    <option value="36">36%</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group py-2">
+                                <label for="initial_sum">Boshlang'ich to'lov (%)</label>
+                                <input type="text" id="initial_sum" class="form-control"
+                                       placeholder="Boshlang'ich to'lov ...">
+                            </div>
+                            <div class="form-group py-2">
+                                <label for="period">To'lash muddati (oy hisobida)</label>
+                                <input type="text" class="form-control" id="period" placeholder="To'lash muddati ...">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-primary float-right mt-3">HISOBLASH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-10 offset-1">
+            <div class="card">
+                <div class="card-header text-info">
+                    <h2 class="text-center">Hisoblash jadvali</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-bordered table-hover table-active tab-content">
+                        <thead class="text-muted">
+                        <tr>
+                            <th>#</th>
+                            <th>Sana</th>
+                            <th>Kredit qoldig'i</th>
+                            <th>Qaytarish miqdori</th>
+                            <th>Kredit foizi</th>
+                            <th>Jami to'lov miqdori</th>
+                            <th>Kunlar</th>
+                        </tr>
+                        </thead>
+                        <tbody id="result">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/moment.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
